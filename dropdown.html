@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .dropdown-button {
+      background-color: transparent;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 0;
+      right: -150px;
+      background-color: #f9f9f9;
+      width: 150px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      display: none;
+      padding: 10px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 5px 0;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ccc;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropdown-button">&#8942;</button>
+    <div class="dropdown-content">
+      <a href="#">Item 1</a>
+      <a href="#">Item 2</a>
+      <a href="#">Item 3</a>
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+
+  <div>
+    <!-- Front page content goes here -->
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</body>
+</html>

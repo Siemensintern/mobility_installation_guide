@@ -25,7 +25,7 @@
         }
         
         .book {
-            width: 500px;
+            width: 350px;
             height: 320px;
             background-color: #fff;
             border-radius: 5px;
@@ -79,12 +79,15 @@
         .search {
             text-align: center;
             margin-bottom: 20px;
+            font-size: 16px;
         }
         
         .search input[type="text"] {
             padding: 8px;
             width: 300px;
+            height: 15px;
             font-size: 16px;
+            
         }
         
         .search input[type="submit"] {
@@ -92,7 +95,7 @@
             font-size: 16px;
             background-color: #4CAF50;
             color: white;
-            border: none;
+            border: black;
             cursor: pointer;
         }
         h1 {
@@ -107,8 +110,60 @@
     }
     
     .logo img {
-      width: 120px;
-      height: 50px;
+      width: 150px;
+      height: auto;
+    }
+    .contact-info {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown-button {
+      background-color: transparent;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 0;
+      left: -150px;
+      background-color: #f9f9f9;
+      width: 150px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      display: none;
+      padding: 10px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 5px 0;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ccc;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     </style>
 </head>
@@ -127,7 +182,23 @@
             <input type="text" id="searchInput" placeholder="Search Components...">
             <input type="submit" value="Search">
         </form>
-    </div>
+    </div>  
+    <div class="dropdown">
+        <button class="dropdown-button">&#8942;</button>
+        <div class="dropdown-content">
+          <a href="https://drive.google.com/file/d/1ABDTK433c6Vdq3t4wBbWt9EbcVnaGCeF/view?usp=drive_link"target="_blank">DC Track Circuit</a>
+          <a href="https://drive.google.com/file/d/1y4DrirEn2sAU8dYEuPqjL0wBe6zWwwd_/view?usp=drive_link"target="_blank">Earth Leakage Detector</a>
+          <a href="https://drive.google.com/file/d/1MNV7dtc9-9BSlX6dXJ6YoQPkWDTLs3S1/view?usp=drive_link"target="_blank">Earthing of S&T Gears</a>
+          <a href="https://drive.google.com/file/d/1muuTjehvaQwc8PttpgkGWCbhwG3b9efr/view?usp=drive_link"target="_blank">Location Box V1</a>
+          <a href="https://drive.google.com/file/d/1ATAkDlDswGqHZ8QV5aZszfAQcG6p_zqv/view?usp=drive_link"target="_blank">Signals V1</a>
+          <a href="#"target="_blank">Item 6</a>
+          <a href="#"target="_blank">Item 7</a>
+          <a href="#"target="_blank">Item 8</a>
+          <a href="#"target="_blank">Item 9</a>
+          <a href="#"target="_blank">Item 10</a>
+          <!-- Add more items as needed -->
+        </div>
+      </div>      
     <div class="bookshelf" id="bookshelf">
         <!-- Sample book items -->
         <div class="book">
@@ -137,55 +208,55 @@
             <a class="pdf-button" href="https://drive.google.com/file/d/1ABDTK433c6Vdq3t4wBbWt9EbcVnaGCeF/view?usp=drive_link" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="Earth Leakage Detector.png" alt="component_name">
+            <img src="Earth Leakage Detector.png" alt="component_image">
             <h3>Earth Leakage Detector</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="https://drive.google.com/file/d/1y4DrirEn2sAU8dYEuPqjL0wBe6zWwwd_/view?usp=drive_link" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="Earthing of S&T Gears.png" alt="component_name">
+            <img src="Earthing of S&T Gears.png" alt="component_image">
             <h3>Earthing of S&T Gears</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="https://drive.google.com/file/d/1MNV7dtc9-9BSlX6dXJ6YoQPkWDTLs3S1/view?usp=drive_link" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="Location Box V1.png" alt="component_name">
+            <img src="Location Box V1.png" alt="component_image">
             <h3>Location Box V1</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="https://drive.google.com/file/d/1muuTjehvaQwc8PttpgkGWCbhwG3b9efr/view?usp=drive_link" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="Signals V1.png" alt="component_name">
+            <img src="Signals V1.png" alt="component_image">
             <h3>Signals V1</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="https://drive.google.com/file/d/1ATAkDlDswGqHZ8QV5aZszfAQcG6p_zqv/view?usp=drive_link" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="image.jpg" alt="component_name">
+            <img src="DC Track Circuit.png" alt="component_image">
+            <h3>DC Track Circuit</h3>
+            <p>Date : 23/05/2023</p>
+            <a class="pdf-button" href="https://drive.google.com/file/d/1ABDTK433c6Vdq3t4wBbWt9EbcVnaGCeF/view?usp=sharing" target="_blank">Installation Guide</a>
+        </div>
+        <div class="book">
+            <img src="image.jpg" alt="component_image">
             <h3>Component</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="handbook.pdf" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="image.jpg" alt="component_name">
+            <img src="image.jpg" alt="component_image">
             <h3>Component</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="handbook.pdf" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="image.jpg" alt="component_name">
+            <img src="image.jpg" alt="component_image">
             <h3>Component</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="handbook.pdf" target="_blank">Installation Guide</a>
         </div>
         <div class="book">
-            <img src="image.jpg" alt="component_name">
-            <h3>Component</h3>
-            <p>Author: Author 2</p>
-            <a class="pdf-button" href="handbook.pdf" target="_blank">Installation Guide</a>
-        </div>
-        <div class="book">
-            <img src="image.jpg" alt="component_name">
+            <img src="image.jpg" alt="component_image">
             <h3>Component</h3>
             <p>Author: Author 2</p>
             <a class="pdf-button" href="handbook.pdf" target="_blank">Installation Guide</a>
@@ -215,13 +286,13 @@
     </script>
 </head>
 <body>
-    <div class="container">
-      <h1>Welcome to the Home Page</h1>
+    <div class="contact-info">
+        <p>Contact us at <a href="siemensmobilityintern@gmail.com">siemensmobilityintern@gmail.com</a> or call <a href="+919325888171">+919325888171</a></p>
+    </div>
+    <div class="contact-info">
       <p>This is the home page of our website.</p>
-      <ul>
         <li><a href="register.html">Register</a></li>
         <li><a href="login.html">Login</a></li>
-      </ul>
     </div>
   </body>
 </html>
